@@ -1,0 +1,30 @@
+Perceptron was the earliest Artificial Neuron Model, by Frank Rosenblatt
+Very primitive, used a step function as an activation function
+But the book by Rosenblatt introduced Neural Networks as fatally flawed, as it could only solve problems that were linearly separable problems - this was not true, but hindered development for ten years
+XOR: Not linearly separable
+	Linearly separable: Literally separating data by a line - imagine a square containing the data, with XOR you'll have to mix 1s and 0s
+Using a hidden layer (the transformation function in an ANN) the previously inseparable problem can become linearly separable!
+
+Hidden layers add another dimension on top of existing width: Depth
+Depth is important for it has shown through empirical evidence that it improves test set accuracy, but this is not always true!
+
+Given x classes, there are ceiling[log_2(x)] neurons needed
+
+Using the derivative of error with respect to weight, we can calculate the next weight which will hopefully reduce the error
+WEIGHT UPDATE IS WHEN THE LEARNING HAPPENS
+
+Overfitting can be combatted by augmenting data
+	This can be done by not only adding additional data points, but adding noise as well
+	Transform the data! (Scale, shift, rotate, etc)
+	
+
+
+
+Keypoints: Perceptron, XOR problem, linearly separable, gradient descent, Multi-Layer Perceptron (MLP)
+
+Q: SoftMax/Cross-entropy loss?
+Q: What makes AI/ML/DL so special? It's just a set of algorithms in a LONG loop?
+
+Exercise: Do the algebraic calculations on slide p.23
+E: Do the BP algorithm @ p. 63
+
